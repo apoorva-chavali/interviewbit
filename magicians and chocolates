@@ -1,0 +1,26 @@
+B=[69,61]
+A=34
+l=[]
+s=0
+k=len(B)
+for i in B:
+    while((i//2)!=0):
+        i=i//2
+        l.append(i)
+        
+        
+for i in B:
+    l.append(i)       
+l.sort()
+
+
+l.reverse()
+print(l)
+if(len(l)>A):
+    for i in range(A):
+    
+        s=s+l[i]
+else:
+    s=sum(l)
+	       
+print( s) 
